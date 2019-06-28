@@ -59,34 +59,14 @@ The results will be similar to the following
 ==========
 RESULTS
 ==========
-{'program_number': u' 0603680F', 'file_name': u' U_0603680F_3_PB_2020', 'agency': u' Air Force', 'fiscal_year': u'
-2020', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program',
- 'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' U_0603680F_3_PB_2019', 'agency': u' Air Force', 'fiscal_year': u'
-2019', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program',
- 'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' U_0603680F_3_PB_2018', 'agency': u' Air Force', 'fiscal_year': u'
-2018', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program',
- 'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' U_0603680F_3_PB_2017', 'agency': u' Air Force', 'fiscal_year': u'
-2017', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program',
- 'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2016', 'agency': u' Air Force', 'fiscal_year': u' 2016',
- 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program',
- 'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2015', 'agency': u' Air Force', 'fiscal_year': u' 2015',
-'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program',
-'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2014', 'agency': u' Air Force', 'fiscal_year': u' 2014',
-'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program',
-'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2013', 'agency': u' Air Force', 'fiscal_year': u' 2013',
-'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technologies',
-'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2012', 'agency': u' Air Force', 'fiscal_year': u' 2012',
-'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technologies',
-'appropriation_number': u' 3600'}
-{'program_number': u' 0603680F', 'file_name': u' 0603680F_PB_2011', 'agency': u' Air Force', 'fiscal_year': u' 2011',
-'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technologies', 
-'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' U_0603680F_3_PB_2020', 'agency': u' Air Force', 'fiscal_year': u' 2020', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' U_0603680F_3_PB_2019', 'agency': u' Air Force', 'fiscal_year': u' 2019', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' U_0603680F_3_PB_2018', 'agency': u' Air Force', 'fiscal_year': u' 2018', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' U_0603680F_3_PB_2017', 'agency': u' Air Force', 'fiscal_year': u' 2017', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2016', 'agency': u' Air Force', 'fiscal_year': u' 2016', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2015', 'agency': u' Air Force', 'fiscal_year': u' 2015', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2014', 'agency': u' Air Force', 'fiscal_year': u' 2014', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technology Program', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2013', 'agency': u' Air Force', 'fiscal_year': u' 2013', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technologies', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' 0603680F_3_PB_2012', 'agency': u' Air Force', 'fiscal_year': u' 2012', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technologies', 'appropriation_number': u' 3600'}
+{'program_number': u' 0603680F', 'file_name': u' 0603680F_PB_2011', 'agency': u' Air Force', 'fiscal_year': u' 2011', 'budget_title': u' Advanced Technology Development (ATD)', 'program_title': u' Manufacturing Technologies', 'appropriation_number': u' 3600'}
 ```
