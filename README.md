@@ -32,6 +32,7 @@ pip install -r requirements.txt
 A step by step series on how to run unit tests and integration tests
 
 ```
+pip install -r test-requirements.txt
 nosetests tests
 nosetests integration_tests
 ```
