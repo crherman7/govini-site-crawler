@@ -1,4 +1,4 @@
-ENVIRONMENT = "development"
+ENVIRONMENT = "production"
 URL = "https://apps.dtic.mil/dodinvestment/#/advancedSearch"
 SEARCH_ELEMENT_ID = "budgetNumObj_value"
 SEARCH_VALUE = "0603680F"

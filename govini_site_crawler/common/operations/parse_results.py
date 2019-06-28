@@ -5,6 +5,6 @@ ABC = abc.ABCMeta('ABC', (object,), {})
 
 class ParseResults(ABC):
 
-    @staticmethod
-    def print_results(json_object):
-        print(json_object)
+    @abc.abstractmethod
+    def print_results(self):
+        pass
