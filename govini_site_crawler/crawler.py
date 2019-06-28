@@ -11,8 +11,7 @@ def main():
     crawler.element_interaction(search_element=search_element, button_element=button_element)
     crawler.browser.implicitly_wait(5)
     dod_parse_results = DoDParseResults(crawler.browser)
-    elements = dod_parse_results.get_elements()
-    dod_parse_results.assign_results(elements=elements)
+    dod_parse_results.get_elements()
     dod_parse_results.print_results()
 
 

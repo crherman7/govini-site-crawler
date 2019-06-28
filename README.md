@@ -17,6 +17,11 @@ sudo apt upgrade
 sudo apt install python2.7 python-pip
 ```
 
+Google Chrome & ChromeDriver - Follow the directions at the below website
+```
+https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/
+```
+
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running

@@ -3,6 +3,10 @@ from govini_site_crawler.dod.models.dod_result import DoDResult
 from govini_site_crawler.dod.models.constants import RESULTS_CLASS_NAME
 from govini_site_crawler.app_logging import logger
 
+from selenium.common.exceptions import NoSuchElementException
+
+import time
+
 
 class DoDParseResults(ParseResults):
 
@@ -15,7 +19,20 @@ class DoDParseResults(ParseResults):
         logger.info("Attempting to retrieve list of elements by class name: {}".format(RESULTS_CLASS_NAME))
         elements = self.browser.find_elements_by_class_name(name=RESULTS_CLASS_NAME)
 
-        return elements
+        self.assign_results(elements=elements)
+
+        next_page = True
+        page_value = 2
+        while next_page:
+            try:
+                button = self.browser.find_element_by_link_text(str(page_value))
+                button.click()
+                time.sleep(5)
+                next_elements = self.browser.find_elements_by_class_name(name=RESULTS_CLASS_NAME)
+                self.assign_results(elements=next_elements)
+                page_value += 1
+            except NoSuchElementException:
+                next_page = False
 
     def assign_results(self, elements):
         logger.info("Translating results into model")
