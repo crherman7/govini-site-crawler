@@ -20,7 +20,8 @@ class DoDWebCrawler(WebCrawler):
 
         return element
 
-    def element_interaction(self, search_element, button_element):
+    @staticmethod
+    def element_interaction(search_element, button_element):
         logger.info("Interacting with search element id: {} and button element id: {}"
                     .format(SEARCH_ELEMENT_ID, BUTTON_ELEMENT_ID))
         search_element.send_keys(SEARCH_VALUE)

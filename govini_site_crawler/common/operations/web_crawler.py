@@ -28,8 +28,9 @@ class WebCrawler(ABC):
     def retrieve_element(self, identifier):
         pass
 
+    @staticmethod
     @abc.abstractmethod
-    def element_interaction(self, **kwargs):
+    def element_interaction(**kwargs):
         pass
 
     @abc.abstractmethod
