@@ -6,5 +6,6 @@ setup(
     version="1",
     packages=find_packages(exclude="tests"),
     author="Christopher Herman",
-    author_email="crherman7@gmail.com"
+    author_email="crherman7@gmail.com",
+    scripts=['scripts/run_crawler'],
 )
