@@ -17,7 +17,8 @@ class DoDIntegrationTest(unittest.TestCase):
         self.crawler.element_interaction(search_element=search_element, button_element=button_element)
         self.crawler.browser.implicitly_wait(5)
         self.dod_parse_results = DoDParseResults(self.crawler.browser)
-        self.dod_parse_results.get_elements()
+        self.dod_parse_results.get_element_list()
+        self.dod_parse_results.iterate_next_page()
 
     def test_data_parsing(self):
         results = self.dod_parse_results.dod_results

@@ -1,6 +1,8 @@
 """DoD specific class for parsing results.
 """
 
+from __future__ import print_function
+
 from govini_site_crawler.common.operations.parse_results import ParseResults
 from govini_site_crawler.dod.models.dod_result import DoDResult
 from govini_site_crawler.dod.models.constants import RESULTS_CLASS_NAME
@@ -23,24 +25,26 @@ class DoDParseResults(ParseResults):
 
         self.dod_results = list()
 
-    def get_elements(self):
-        """Retrieves all the result elements from the website and navigates to the next page if it exists
-        to parse additional results.
+    def get_element_list(self):
+        """Retrieves a list of elements for a specific identifier.
         """
-        logger.info("Attempting to retrieve list of elements by class name: {}".format(RESULTS_CLASS_NAME))
+        logger.info("Attempting to retrieve elements by class name: {}".format(RESULTS_CLASS_NAME))
         elements = self.browser.find_elements_by_class_name(name=RESULTS_CLASS_NAME)
 
         self.assign_results(elements=elements)
 
+    def iterate_next_page(self):
+        """Determines if there is additional pages of results.
+        """
         next_page = True
         page_value = 2
+
         while next_page:
             try:
                 button = self.browser.find_element_by_link_text(str(page_value))
                 button.click()
                 time.sleep(5)
-                next_elements = self.browser.find_elements_by_class_name(name=RESULTS_CLASS_NAME)
-                self.assign_results(elements=next_elements)
+                self.get_element_list()
                 page_value += 1
             except NoSuchElementException:
                 next_page = False

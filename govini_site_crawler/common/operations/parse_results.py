@@ -9,7 +9,7 @@ ABC = abc.ABCMeta('ABC', (object,), {})
 class ParseResults(ABC):
 
     @abc.abstractmethod
-    def get_elements(self):
+    def get_element_list(self):
         """Abstract method for retrieving elements for a webdriver page.
         """
         pass
