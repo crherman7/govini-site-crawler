@@ -48,6 +48,7 @@ A step by step series of examples that tell you how to get a production env runn
 
 ```
 git clone https://github.com/crherman7/govini-site-crawler.git
+pip install -r requirements.txt
 python setup.py install
 ```
 
