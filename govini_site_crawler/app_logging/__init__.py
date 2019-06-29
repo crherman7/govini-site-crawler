@@ -1,3 +1,6 @@
+"""govini-site-crawler logger configuration.
+"""
+
 import logging
 
 logger = logging.getLogger(__name__)

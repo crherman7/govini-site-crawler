@@ -1,3 +1,6 @@
+"""DoD specific class for parsing results.
+"""
+
 from govini_site_crawler.common.operations.parse_results import ParseResults
 from govini_site_crawler.dod.models.dod_result import DoDResult
 from govini_site_crawler.dod.models.constants import RESULTS_CLASS_NAME
@@ -11,11 +14,19 @@ import time
 class DoDParseResults(ParseResults):
 
     def __init__(self, browser):
+        """Parses results from the DoD website after it has been interacted with.
+
+        Args:
+            browser: ChromeDriver selenium webdriver
+        """
         self.browser = browser
 
         self.dod_results = list()
 
     def get_elements(self):
+        """Retrieves all the result elements from the website and navigates to the next page if it exists
+        to parse additional results.
+        """
         logger.info("Attempting to retrieve list of elements by class name: {}".format(RESULTS_CLASS_NAME))
         elements = self.browser.find_elements_by_class_name(name=RESULTS_CLASS_NAME)
 
@@ -35,6 +46,12 @@ class DoDParseResults(ParseResults):
                 next_page = False
 
     def assign_results(self, elements):
+        """Assigns results to a DoDResult model.
+
+        Args:
+            elements: List of ChromeDriver html elements
+
+        """
         logger.info("Translating results into model")
         for element in elements:
             program_title, \
@@ -55,6 +72,8 @@ class DoDParseResults(ParseResults):
             self.dod_results.append(dod_result)
 
     def print_results(self):
+        """Prints DoD result items to the terminal.
+        """
         print("==========")
         print("RESULTS")
         print("==========")

@@ -1,9 +1,14 @@
+"""Main web crawler runner.
+"""
+
 from govini_site_crawler.dod.operations.dod_web_crawler import DoDWebCrawler
 from govini_site_crawler.dod.models.constants import SEARCH_ELEMENT_ID, BUTTON_ELEMENT_ID
 from govini_site_crawler.dod.operations.dod_parse_results import DoDParseResults
 
 
 def main():
+    """Combines the steps from the created library to run the script.
+    """
     crawler = DoDWebCrawler()
     crawler.retrieve_website()
     search_element, button_element = crawler.retrieve_element(SEARCH_ELEMENT_ID), \
